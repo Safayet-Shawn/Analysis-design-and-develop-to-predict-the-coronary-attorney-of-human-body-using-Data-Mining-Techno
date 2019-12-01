@@ -1,0 +1,328 @@
+@relation train
+
+@attribute Patient_ID numeric
+@attribute Patient_Name {'Sontosh Kumar',Sonia,Jobeda,'Lipi Ghosh','A.Khalilur Rahman','Proshanto Shaha','Hasina akter','Abul hosain','Lota begom','Hosne ara','Sekh  Barek','Younus Ali','Shurborno Bonik','Yasin ahmed','Liton chowdhory',Suvo,'Bashonty Rani','Nirmol Chandro Paul','Ajit Kumar Paul',Rehena,'Nirmil Dash',Hosneara,Bilkis,Milon,Amena,'Motiur Rahman',Moniruzzaman,'Khadem Uddin',Johura,'Rabeya Khushi','Rakib ',Rokey,'MD shumon','Rakib chowdhury',Fahima,Nitai,Aeyesha,'Keramot Ali','Saleha Begam','Jane Alam','Mukta ','Shampa Begum','Anwarul ',Begum,'Golam Mostofa','Nur Jahan','Nusrat Jahan','Shohidul Islam',Parvin,Shamima,'Rejzanul Haque','Nilufa Yeasmin',Rajib,Nargich,'Nitish Ghosh','Banu Begam','Dulal Shaha',Malek,Selyna,'Shoroj Shaha',Sharifunnessa,Aseya,'Sekh Akter',Tashlima,Tahmina,'Abul Bashar','Nirmol Poddar','Sulta Islam','sumi ',Mejbahuddin,Majeda,Shetu,Rokea,Sajida,'Hasan Kabir',Laily,'MD motalab','Joynal  Ahmed','Anik chisty','Dabashis roy','Momin Uddin','Dulal Chandra',Sajeda,Iqbal,'Surjo Begam',Momtaj,'Lima Begam','Akmol Kaji',Asiya,'Rumli hosain','Sabir rohman',Samsunnahar,'M.A. Aowal',Md.Mohsin,'S.M.Khalilur Rahman','Nirmol Ghosh',Dilruba,'Joya Shil',Shahida,Rupaly,Sohrab,'Anil Kumar',momina,'Shirajul islam','Sumon Khan','sumi sultana',sufia,'majharul Haque','abida begum','Rofiiqul islaqm','SK shawon','Shiraj Kaji',Abida,'Khurshid mia',Rejeya,'Mojirun nessa',Komola,'Md. Akkach','Nobiyar Rahman',Nurunnahar,'Khondokar Bodrul Kuser',Rohima,Rekha,Farida,Aklima,'Muktar Shiktar',Asma,'SK kaium',Lalita,'Monjur Khan','Malek Sharif','Ahmed Sattar','Bulu Begam','Abeer hosain','Shagor dotto',Ferdousy,Shefaly,'Akas ahmed',Jakiya,'Shorif hosain','MD. Harun','Tota Miya',Rokeya,'Nasir Uddin',Renu,'Iqbal Hossain',Rumana,Mousume,'Asad mia',Moutushe,'Remin Nabi','Saki Hossain','Rhidoy khan','Milon ahmed',Anowara,'Anowar Hossen',Nilufa,'MD shopon',Al-amin,'Bethe Choudhury','SK torun',Mahmud,'Anjily Shaha',Rokhsana,'Horendro Paul','Bikash Paul',Fatema,'Babul hosain',Nashrin,Shirin,'MD mannan','Falguni Begam',Farjana,' MD Hasan ','Samanta Hasan','Abul Hasem','Md. Rakib mia',Md.Rokib,Ajharul,Suborna,Moonjan,'Shirin Ahmed','Soburun nessa',Sabiha,'Amin Uddin',Khushi,'Golam Kabir','Sekh Ahmed Barek','Doly Dotto',Nafis,Helena,sultana,'Emon sk',Firoja,'shagor ',Moushumi,'Moshlem Uddin','Jotish Malo','Helena Parvin','Akhidul Islam','Komol Krishno Shaha',Rahima,'Sonjoy Kumar Shaha'}
+@attribute Gender {M,F}
+@attribute Age numeric
+@attribute weight numeric
+@attribute weight_loss {N,Y}
+@attribute Drug_dependence {Y,N,y}
+@attribute 'drug_addicion ' {Y,N}
+@attribute Hyper_Tension {Y,N}
+@attribute Systolic_Blood_Pressure numeric
+@attribute Diastolic_blood_pressure numeric
+@attribute Cholesterol_HDL numeric
+@attribute Cholesterol_LDL numeric
+@attribute 'fasting_ blood _suger' numeric
+@attribute 'post_ mensal_ blood _suger' numeric
+@attribute Heredity {Y,N,' Y'}
+@attribute Physical_Activity {no,'8 h','5 h','2 h','10 h','6 h','7 h','4 h','9 h',4h,'12 h','11 h','13 h','3 h'}
+@attribute Blurred_Vision {Y,N}
+@attribute Tiredness {Y,N}
+@attribute chest_pain {Y,N}
+@attribute 'shoulder _pain' {N,Y,'N '}
+@attribute EPIGASTRIC {N,Y}
+@attribute ECG_change {Y,N,y}
+@attribute 'Coronary_Attorney ' {Positive,Negative}
+
+@data
+1,'Sontosh Kumar',M,68,67,N,Y,Y,Y,164,100,78,139,0,20.43,Y,no,Y,Y,Y,N,N,Y,Positive
+2,Sonia,F,29,62,N,N,N,N,120,72,52,100,0,6.86,N,'8 h',N,N,N,N,N,N,Negative
+3,Jobeda,F,50,66,Y,Y,N,Y,142,90,49,104,9,13.1,Y,'5 h',Y,Y,N,N,Y,Y,Positive
+4,'Lipi Ghosh',F,48,69,Y,Y,N,Y,114,76,53,101,0,9.18,N,no,Y,N,N,N,N,N,Negative
+5,'A.Khalilur Rahman',M,70,67,Y,Y,Y,Y,155,110,65,136,10,13.65,Y,no,Y,N,Y,N,N,Y,Positive
+6,'Proshanto Shaha',M,51,80,N,Y,N,Y,140,90,69,136,9,14.38,Y,'2 h',Y,Y,N,Y,N,Y,Positive
+7,'Hasina akter',F,45,66,N,Y,N,Y,142,90,69,140,7.45,13.9,Y,'5 h',Y,N,N,Y,N,Y,Positive
+8,'Abul hosain',M,30,70,Y,Y,Y,Y,160,90,87,165,15.76,22.75,N,'8 h',N,Y,Y,N,N,Y,Positive
+9,'Lota begom',F,30,54,Y,Y,N,Y,120,68,80,161,9.23,16.47,N,'10 h',N,N,Y,N,N,Y,Positive
+10,'Hosne ara',F,45,65,N,Y,N,N,184,60,49,110,0,6.78,N,'8 h',Y,Y,Y,N,N,Y,Positive
+11,'Sekh  Barek',M,65,47,Y,Y,N,N,120,60,40,143,5.9,8.6,N,no,Y,N,N,Y,Y,Y,Positive
+12,'Younus Ali',M,66,70,N,Y,N,N,140,70,40,110,6.5,7.6,N,no,Y,N,N,N,N,N,Positive
+13,'Shurborno Bonik',F,24,65,Y,Y,Y,Y,137,97,49,176,14.03,17.42,Y,'10 h',N,Y,Y,N,N,Y,Positive
+14,'Yasin ahmed',M,52,63,N,Y,Y,Y,159,90,80,170,8.4,10.45,N,'8 h',Y,N,Y,N,N,Y,Positive
+15,'Liton chowdhory',M,70,63,N,Y,N,N,80,64,44,120,6.05,6.84,N,'6 h',N,N,N,N,Y,Y,Positive
+16,Suvo,M,62,56,N,Y,N,N,120,88,40,119,5.69,10.4,N,'10 h',N,N,N,N,N,N,Positive
+17,'Bashonty Rani',F,45,50,Y,Y,N,Y,124,98,60,128,10.5,17.4,Y,'8 h',Y,Y,Y,N,N,Y,Positive
+18,'Nirmol Chandro Paul',M,40,80,N,N,Y,N,120,70,62,137,6.36,10.26,N,'5 h',N,N,Y,N,N,Y,Positive
+19,'Ajit Kumar Paul',M,42,52,Y,Y,Y,Y,127,90,52,126,10.25,13.73,Y,'6 h',N,Y,Y,N,N,y,Positive
+20,Rehena,F,45,63,Y,Y,N,Y,159,90,58,126,7.6,15.9,N,'8 h',Y,N,N,Y,N,Y,Positive
+21,'Nirmil Dash',M,35,76,N,Y,N,N,145,90,69,148,0,16,N,'6 h',N,Y,Y,N,N,Y,Positive
+22,Hosneara,F,61,48,Y,Y,N,Y,82,65,44,120,9,18.34,' Y',no,N,Y,Y,N,N,Y,Positive
+23,Bilkis,F,40,64,N,Y,N,Y,120,60,74,140,0,9.07,N,'6 h',Y,N,Y,N,N,Y,Positive
+24,Milon,M,42,44,Y,Y,Y,N,139,64,56,129,0,4.7,Y,'7 h',N,Y,N,N,N,N,Positive
+25,Amena,F,55,62,N,Y,N,N,122,68,41,110,0,7.85,N,'4 h',N,N,Y,N,N,Y,Positive
+26,'Motiur Rahman',M,65,68,N,Y,Y,N,84,84,70,137,12,16.66,N,no,Y,N,Y,N,N,Y,Positive
+27,Moniruzzaman,M,32,69,Y,Y,Y,Y,140,80,40,129,7.84,13.96,Y,'7 h',Y,Y,Y,N,N,Y,Positive
+28,'Khadem Uddin',M,35,58,Y,Y,Y,N,132,84,71,174,0,9.29,Y,'8 h',Y,Y,N,Y,N,Y,Positive
+29,Johura,F,70,55,N,Y,Y,N,138,60,41,121,0,11.81,N,no,N,N,N,Y,N,Y,Positive
+30,'Rabeya Khushi',F,35,57,Y,Y,N,Y,88,88,67,109,13.05,19.62,Y,'6 h',Y,Y,N,Y,N,Y,Negative
+31,'Rakib ',M,42,60,Y,N,N,N,88,88,96,147,8.04,10.7,Y,'4 h',N,Y,Y,N,N,Y,Negative
+32,Jobeda,F,35,51,N,Y,Y,Y,92,62,44,100,16,22.35,N,'5 h',Y,N,N,N,Y,Y,Negative
+33,Rokey,M,66,45,Y,Y,N,N,80,76,42,111,6.6,10.11,Y,'2 h',Y,Y,N,N,Y,Y,Positive
+34,'MD shumon',M,40,59,N,Y,Y,N,110,72,41,104,0,7.88,N,'8 h',Y,N,Y,Y,N,Y,Negative
+35,'Rakib chowdhury',M,50,70,N,Y,Y,N,112,72,44,192,10.68,15.13,N,'5 h',N,N,Y,N,N,Y,Positive
+36,Fahima,F,45,60,Y,Y,N,Y,99,70,52,140,4.1,7.88,Y,'7 h',Y,Y,N,Y,N,Y,Positive
+37,Nitai,M,35,63,N,N,N,N,116,78,57,110,10.5,18,Y,'10 h',N,N,N,N,N,N,Positive
+38,Aeyesha,F,60,65,N,N,N,N,106,62,61,117,15.36,23.45,N,'7 h',N,N,N,Y,N,Y,Positive
+39,'Keramot Ali',M,50,55,N,N,Y,N,110,76,69,123,7.5,8.69,N,'8 h',Y,N,N,Y,N,Y,Positive
+40,'Saleha Begam',F,32,65,Y,Y,N,Y,130,76,41,117,6.96,9.97,Y,'10 h',Y,Y,N,N,N,N,Negative
+41,'Jane Alam',M,44,71,N,Y,Y,N,142,66,60,110,0,6.62,Y,'8 h',Y,N,N,N,Y,Y,Positive
+42,'Mukta ',F,53,71.7,Y,Y,N,Y,132,58,59,127,4.98,6.68,Y,'4 h',Y,Y,N,N,Y,Y,Positive
+43,'Shampa Begum',F,18,30,Y,N,Y,N,88,52,65,93,3.7,6.56,Y,'6 h',N,Y,N,N,N,N,Positive
+44,'Anwarul ',M,60,73.1,Y,Y,Y,Y,122,80,57,124,12,13.58,Y,no,Y,Y,N,N,N,N,Positive
+45,Begum,F,41,60.5,Y,Y,N,N,100,60,43,122,8,14.5,Y,'9 h',Y,Y,N,N,Y,Y,Negative
+46,'Golam Mostofa',M,18,34,N,Y,Y,Y,122,62,50,99,12,15.65,N,'4 h',Y,N,N,N,N,N,Negative
+47,'Nur Jahan',F,21,40,Y,Y,N,N,114,72,80,116,15,17.84,N,'8 h',Y,Y,Y,N,N,Y,Negative
+48,'Nusrat Jahan',F,21,38,N,Y,N,N,94,54,77,84,17,22.97,N,'7 h',Y,N,N,Y,N,Y,Negative
+49,'Shohidul Islam',M,57,62,Y,N,Y,Y,126,78,60,114,5.55,6.8,Y,'4 h',N,Y,N,N,N,N,Positive
+50,Parvin,F,19,29,N,Y,Y,N,100,54,41,55,8.02,10,N,'4 h',N,N,N,N,N,N,Negative
+51,Shamima,F,19,34,Y,N,N,N,110,74,23,115,0,6.89,Y,'4 h',N,Y,N,N,Y,Y,Negative
+52,'Rejzanul Haque',M,27,45,Y,N,Y,N,118,60,47,122,0,9.82,Y,'7 h',N,Y,N,N,Y,Y,Negative
+53,'Nilufa Yeasmin',F,35,56,N,Y,N,Y,120,78,60,100,6.9,13.15,N,'6 h',N,N,Y,N,N,Y,Positive
+54,Rajib,M,67,56,Y,Y,Y,N,139,78,62,143,7.05,15.32,Y,no,Y,Y,Y,Y,N,Y,Positive
+55,Nargich,F,44,66,Y,Y,Y,Y,160,90,62,149,15.05,21.81,Y,'5 h',Y,Y,Y,N,N,Y,Positive
+56,'Nitish Ghosh',M,48,64,N,Y,Y,N,114,62,60,137,7.71,10.14,N,'7 h',Y,N,Y,N,N,Y,Positive
+57,'Banu Begam',F,40,65,Y,Y,N,N,114,60,62,172,7.36,9.8,N,'5 h',Y,N,Y,N,N,Y,Positive
+58,'Nur Jahan',F,45,85,N,Y,N,N,120,84,49,105,6.13,7.2,N,'7 h',Y,N,N,N,N,N,Positive
+59,'Dulal Shaha',M,37,71,N,N,Y,N,104,76,42,100,0,5.71,N,'8 h',N,N,N,N,N,N,Positive
+60,Malek,M,65,68,Y,Y,Y,Y,108,70,63,137,9.06,16.39,Y,no,Y,N,N,Y,N,Y,Positive
+61,Selyna,F,38,57,Y,Y,N,Y,88,64,55,118,0,11.68,Y,'5 h',Y,N,N,Y,N,Y,Positive
+62,'Shoroj Shaha',M,54,75,Y,Y,Y,Y,84,78,70,137,0,21.03,Y,no,Y,Y,N,Y,N,Y,Positive
+63,Sharifunnessa,F,50,53,N,Y,N,N,120,70,40,99,3.7,8.15,N,no,Y,N,N,N,N,N,Negative
+64,Aseya,F,60,52,N,Y,N,N,108,60,43,96,6.98,9.5,N,no,Y,N,N,N,N,N,Negative
+65,'Sekh Akter',M,52,82,Y,Y,Y,Y,136,90,81,153,21.3,32.8,Y,no,Y,Y,N,Y,N,Y,Positive
+66,Tashlima,F,40,30,N,Y,N,Y,142,92,85,150,23.5,25.8,Y,'10 h',Y,Y,N,N,Y,Y,Positive
+67,Tahmina,F,25,49,Y,Y,N,N,149,90,60,119,8.9,19.4,N,'10 h',N,Y,N,N,Y,Y,Negative
+68,'Abul Bashar',M,38,65,Y,Y,Y,Y,148,90,59,120,10.61,17.36,Y,'10 h',N,Y,Y,N,N,Y,Positive
+69,'Younus Ali',M,66,70,N,Y,Y,N,159,90,52,100,6.5,9.6,N,no,Y,N,N,Y,N,Y,Positive
+70,'Nirmol Poddar',M,30,60,N,Y,Y,N,80,60,49,94,6.59,7.42,N,'10 h',N,N,N,N,Y,Y,Negative
+71,'Sulta Islam',M,32,57,N,Y,Y,N,86,68,58,95,6.9,9.55,N,'10 h',N,N,N,N,N,N,Negative
+72,'Shurborno Bonik',F,24,66,Y,Y,N,Y,126,97,76,158,8.17,14.16,Y,'9 h',N,Y,Y,N,N,Y,Positive
+73,'sumi ',F,40,58,N,Y,Y,Y,144,99,70,153,9.82,18.84,Y,'8 h',Y,Y,Y,N,N,Y,Negative
+74,Mejbahuddin,M,65,83,Y,Y,N,Y,152,90,75,173,17.8,25.3,Y,no,Y,Y,N,Y,N,Y,Positive
+75,Majeda,F,74,49,N,Y,Y,Y,132,92,50,129,13.24,19.19,N,no,Y,Y,N,N,N,N,Positive
+76,'Nilufa Yeasmin',F,35,56,N,Y,N,Y,120,78,60,100,6.9,13.15,N,'6 h',N,N,N,N,N,N,Negative
+77,Shetu,M,18,29,Y,Y,Y,Y,132,68,44,129,10,14.13,' Y',4h,N,Y,N,N,N,N,Negative
+78,Rokea,F,56,49,N,Y,N,Y,114,78,46,100,0,18.4,N,'6 h',N,N,Y,N,N,Y,Positive
+79,Sajida,F,35,44,Y,N,N,Y,92,90,57,125,0,15.95,Y,'10 h',Y,Y,Y,N,N,Y,Negative
+80,'Hasan Kabir',M,60,60,Y,Y,N,N,137,76,62,131,0,0,N,'8 h',N,Y,N,N,N,N,Positive
+81,Laily,F,50,57,Y,N,N,N,92,78,45,110,0,13.29,N,'4 h',Y,Y,N,N,N,N,Positive
+82,'MD motalab',M,52,60,N,N,Y,N,110,66,81,147,0,10.1,N,'12 h',N,Y,N,N,Y,Y,Positive
+83,'Joynal  Ahmed',M,50,62,Y,Y,Y,N,98,60,80,153,8.02,15.54,N,'8 h',N,Y,Y,N,N,Y,Positive
+84,'Anik chisty',M,40,70,Y,N,Y,N,116,82,43,120,0,11.89,Y,'5 h',Y,Y,N,N,Y,Y,Positive
+85,'Dabashis roy',M,46,58,Y,Y,Y,N,112,70,50,130,0,18.73,Y,'4 h',Y,Y,Y,N,N,Y,Positive
+86,'Momin Uddin',M,80,70,N,Y,Y,N,80,56,73,144,0,9.02,N,'2 h',N,Y,N,N,Y,N,Positive
+87,'Dulal Chandra',M,45,65,N,Y,Y,Y,88,72,61,144,6,7.82,N,'12 h',N,N,Y,N,N,Y,Positive
+88,Sajeda,F,36,58,N,Y,N,Y,100,76,40,100,5.39,8.4,N,'11 h',N,N,N,N,N,N,Negative
+89,Iqbal,M,46,60,Y,Y,Y,N,140,72,47,112,4.22,7,Y,'6 h',N,Y,N,N,Y,Y,Positive
+90,'Surjo Begam',F,54,49,N,Y,N,N,110,80,41,115,4.25,6.85,N,'2 h',N,N,N,N,N,N,Negative
+91,Momtaj,F,66,58,Y,Y,N,N,100,66,74,153,0,10.7,Y,'2 h',Y,Y,N,N,Y,Y,Positive
+92,'Lima Begam',F,28,56,N,Y,N,N,102,70,80,139,6.9,8.88,N,'13 h',N,N,N,N,Y,Y,Negative
+93,'Akmol Kaji',M,62,52.5,Y,N,Y,Y,130,90,59,111,0,6.02,Y,'5 h',Y,N,N,Y,N,Y,Positive
+94,Asiya,F,55,57,Y,N,Y,N,127,100,47,100,0,8.02,Y,'3 h',Y,Y,N,N,N,N,Negative
+95,'Rumli hosain',F,40,54,Y,Y,N,Y,160,90,50,99,7.87,14.78,Y,'6 h',Y,Y,Y,N,N,Y,Negative
+96,'Sabir rohman',M,45,75,Y,Y,Y,Y,120,90,41,120,12.18,13.58,N,'4 h',Y,Y,Y,N,N,Y,Positive
+97,Samsunnahar,F,50,74,N,Y,N,N,120,72,82,137,17.77,23.42,Y,'3 h',Y,N,N,N,Y,Y,Positive
+98,'M.A. Aowal',M,35,65,N,Y,Y,N,90,98,96,148,6.31,14.53,N,'7 h',N,N,N,N,Y,Y,Positive
+99,Md.Mohsin,M,45,42,Y,Y,Y,Y,168,110,42,128,0,7.42,Y,'3 h',Y,Y,Y,N,N,Y,Positive
+100,'S.M.Khalilur Rahman',M,65,66,N,Y,N,N,106,68,57,100,10.8,12.01,Y,no,N,N,Y,N,N,Y,Positive
+101,'Nirmol Ghosh',M,50,67,Y,N,Y,Y,120,110,82,160,0,14.1,Y,'4 h',Y,Y,N,N,Y,Y,Positive
+102,Dilruba,F,32,65,N,Y,N,N,88,68,44,123,6.52,10.87,N,'10 h',N,N,N,N,N,N,Negative
+103,'Joya Shil',F,44,53,Y,Y,N,Y,120,90,46,164,0,9.32,Y,'6 h',Y,Y,N,N,Y,Y,Positive
+104,Shahida,F,45,66,Y,Y,N,N,140,104,60,108,0,6.44,N,'4 h',Y,Y,Y,Y,N,Y,Negative
+105,Rupaly,F,25,62,N,Y,N,N,120,90,50,110,11.16,13.58,N,'12 h',Y,N,N,Y,N,Y,Negative
+106,Sohrab,M,50,71,Y,Y,Y,Y,130,95,84,156,0,13.26,Y,'4 h',Y,Y,Y,N,N,Y,Positive
+107,'Anil Kumar',M,65,61,Y,Y,Y,Y,130,90,56,130,6.23,8.17,Y,no,Y,Y,N,Y,N,Y,Positive
+108,momina,F,48,58,Y,Y,N,Y,168,90,57,131,13,14.53,Y,'5 h',Y,Y,N,Y,N,Y,Positive
+109,'Shirajul islam',M,24,49,Y,N,Y,N,108,76,62,69,5.5,6.7,N,'7 h',N,Y,N,N,N,N,Negative
+110,'Sumon Khan',M,46,73.4,Y,N,Y,N,126,78,45,77,4.9,6.9,N,'4 h',Y,Y,N,N,N,N,Negative
+111,'sumi sultana',F,34,50,N,Y,N,N,110,66,81,59,7.7,8.54,N,'6 h',N,Y,N,N,N,N,Negative
+112,sufia,F,22,40,Y,Y,Y,N,98,60,37,90,9,14.38,N,'3 h',N,Y,Y,N,N,Y,Negative
+113,'majharul Haque',M,29,49,Y,Y,Y,N,116,82,43,120,17,25.33,Y,'7 h',Y,Y,Y,N,N,Y,Negative
+114,'abida begum',F,61,59.6,Y,Y,N,N,112,70,50,130,12,22.71,Y,'5 h',Y,Y,N,N,N,N,Positive
+115,'Rofiiqul islaqm',M,21,45,N,Y,Y,N,116,66,73,144,20,11.7,N,'7 h',N,Y,N,Y,N,Y,Positive
+116,'SK shawon',M,33,68,N,N,Y,Y,128,72,61,84,3.3,11.51,N,'5 h',N,N,Y,N,N,Y,Negative
+117,'Shiraj Kaji',M,63,84.4,N,Y,N,Y,84,76,39,84,7.3,10.45,N,no,N,N,Y,N,N,Y,Negative
+118,Abida,F,32,70,Y,Y,N,N,116,72,33,112,24,30,Y,no,N,Y,N,N,N,N,Negative
+119,'Khurshid mia',M,21,63,N,Y,Y,N,110,50,41,86,15.76,22.45,N,'4 h',N,N,N,N,N,N,Negative
+120,Rejeya,F,50,65,Y,Y,N,N,118,60,47,122,9.83,15.12,Y,'4 h',N,Y,Y,N,N,Y,Positive
+121,'Mojirun nessa',F,45,54,Y,Y,N,N,110,70,44,112,5.78,17.31,N,'3 h',N,Y,N,N,N,N,Negative
+122,Samsunnahar,F,72,80,N,Y,Y,N,100,60,72,125,0,10.52,N,no,Y,N,Y,N,N,Y,Positive
+123,Komola,F,50,58,Y,Y,N,Y,120,70,76,149,13,16.36,Y,'2 h',Y,Y,Y,N,N,Y,Positive
+124,'Md. Akkach',M,38,81,Y,Y,Y,N,106,74,65,139,15,18.22,Y,'8 h',Y,Y,N,Y,N,Y,Positive
+125,'Nobiyar Rahman',M,53,64,Y,Y,Y,N,80,76,48,108,9,12.63,Y,'2 h',Y,Y,Y,N,N,Y,Positive
+126,Nurunnahar,F,27,54,Y,N,N,Y,88,60,52,122,4.98,9.02,N,'11 h',Y,Y,N,N,N,N,Negative
+127,'Khondokar Bodrul Kuser',M,40,80,Y,Y,Y,N,100,76,72,150,12,17.88,N,'2 h',Y,Y,Y,N,N,Y,Positive
+128,Rohima,F,70,46,Y,Y,Y,N,0,0,66,137,0,16.02,Y,'11 h',N,Y,N,N,Y,Y,Positive
+129,Rokea,F,56,49,N,Y,N,Y,114,78,46,100,0,18.4,N,'6 h',N,N,N,N,Y,Y,Positive
+130,Rekha,F,35,44,Y,N,N,Y,92,60,57,125,0,15.95,Y,'10 h',Y,Y,N,N,N,N,Negative
+131,'Hasan Kabir',M,60,60,Y,Y,Y,N,137,76,62,131,0,0,N,'8 h',N,Y,Y,N,N,Y,Positive
+132,'Saleha Begam',F,32,65,Y,Y,N,Y,130,76,41,117,6.96,9.97,Y,'10 h',Y,Y,N,N,N,N,Negative
+133,'Jane Alam',M,44,71,N,Y,Y,N,142,66,60,110,0,6.62,Y,'8 h',Y,N,N,N,N,N,Positive
+134,Farida,F,40,64,N,Y,N,N,148,72,47,108,0,8.91,N,'8 h',Y,N,N,N,N,N,Negative
+135,Aklima,F,59,56,Y,Y,N,N,134,100,67,139,8.26,14.8,Y,'5 h',N,Y,Y,N,N,Y,Positive
+136,'Muktar Shiktar',M,49,73,Y,Y,Y,Y,138,86,55,108,7.14,11.88,Y,no,Y,Y,Y,Y,N,Y,Positive
+137,Asma,F,35,59,Y,N,N,N,100,86,56,122,6.93,14.77,N,'6 h',N,Y,N,N,N,N,Negative
+138,'SK kaium',M,45,68,N,Y,Y,N,112,80,59,122,6.08,6.91,N,'8 h',N,N,N,N,N,N,Positive
+139,Lalita,F,24,70,Y,N,N,Y,110,90,40,104,15.76,17.81,Y,'10 h',Y,Y,N,N,N,N,Negative
+140,'Monjur Khan',M,42,60,N,N,Y,N,114,90,54,113,5.16,8.39,Y,'6 h',N,N,Y,N,N,Y,Positive
+141,'Malek Sharif',M,65,68,N,Y,Y,N,108,108,82,150,9.06,16.39,N,'5 h',N,N,Y,N,N,Y,Positive
+142,'Hosne ara',F,70,67,N,Y,Y,N,120,90,67,102,6.78,8.1,N,'2 h',Y,N,Y,N,N,Y,Positive
+143,'Ahmed Sattar',M,65,55,N,Y,Y,N,90,60,52,120,6.1,9.82,Y,'2 h',N,N,N,N,Y,Y,Positive
+144,'Bulu Begam',F,70,51,Y,Y,N,N,100,70,69,140,10,13.01,Y,'3 h',Y,Y,Y,N,N,Y,Positive
+145,'Abeer hosain',M,62,70,Y,Y,N,N,100,68,40,155,15.3,18.34,Y,'4 h',Y,Y,N,N,N,N,Positive
+146,'Shagor dotto',M,67,56,Y,Y,N,N,139,78,62,143,7.05,15.32,Y,no,Y,Y,N,N,N,N,Positive
+147,Nargich,F,44,66,Y,Y,N,Y,160,100,62,149,15.05,21.81,Y,'5 h',Y,Y,Y,N,N,Y,Positive
+148,'Nitish Ghosh',M,48,64,N,Y,Y,N,114,62,60,137,7.71,10.14,N,'7 h',Y,N,Y,N,N,Y,Positive
+149,'Banu Begam',F,40,65,Y,Y,N,N,114,60,62,172,7.36,9.8,N,'5 h',Y,N,N,N,N,N,Positive
+150,'Nur Jahan',F,45,85,N,Y,N,N,120,84,49,105,6.13,7.2,N,'7 h',Y,N,N,N,Y,Y,Negative
+151,'Dulal Shaha',M,37,71,N,N,Y,N,104,76,42,100,0,5.71,N,'8 h',N,N,N,N,N,N,Negative
+152,Malek,M,65,68,Y,Y,N,Y,108,70,63,137,9.06,16.39,Y,no,Y,N,N,Y,N,Y,Positive
+153,Selyna,F,38,57,Y,N,N,Y,88,64,55,118,0,11.68,Y,'5 h',Y,N,N,N,N,N,Negative
+154,'Shoroj Shaha',M,54,75,Y,N,Y,Y,84,78,70,137,0,21.03,Y,no,Y,Y,Y,Y,N,N,Positive
+155,Sharifunnessa,F,50,53,N,Y,N,N,120,70,40,99,3.7,8.15,N,no,Y,N,N,N,Y,Y,Negative
+156,Aseya,F,60,52,N,Y,N,N,108,60,43,96,6.98,9.5,N,no,Y,N,N,N,N,N,Negative
+157,Rehena,F,45,63,Y,Y,N,Y,159,100,58,126,7.6,15.9,N,'8 h',Y,N,Y,N,N,Y,Positive
+158,'Nirmil Dash',M,55,76,N,Y,Y,N,145,104,69,148,0,16,N,'6 h',N,Y,Y,N,N,Y,Positive
+159,Ferdousy,F,35,80,Y,Y,N,Y,148,106,73,167,14.27,20,Y,'8 h',N,Y,N,Y,N,Y,Negative
+160,Shefaly,F,40,76,Y,Y,N,Y,166,114,79,163,12.2,17.5,Y,'10 h',Y,Y,Y,N,N,Y,Positive
+161,'Akas ahmed',M,25,66,Y,Y,Y,Y,134,100,52,100,8.29,15.8,N,'8 h',N,Y,Y,N,N,Y,Negative
+162,Jakiya,F,44,61,N,N,N,N,120,60,42,116,4.92,5.42,N,'10 h',Y,N,N,N,N,N,Negative
+163,'Shorif hosain',M,35,77,Y,Y,Y,Y,104,68,63,146,12.76,17.22,Y,'8 h',N,Y,Y,Y,N,Y,Positive
+164,'MD. Harun',M,65,72,N,Y,Y,Y,120,86,71,174,10.6,16.77,Y,'8 h',Y,Y,Y,N,N,Y,Positive
+165,'Tota Miya',M,65,69,N,Y,N,Y,130,100,71,170,8.7,19.5,Y,no,Y,Y,Y,N,N,Y,Positive
+166,Rokeya,F,44,63,N,Y,N,Y,160,114,78,169,0,13.36,Y,no,Y,N,N,Y,N,Y,Positive
+167,'Nasir Uddin',M,50,52,N,Y,N,N,120,60,48,100,6.82,8.03,N,'8 h',Y,N,N,N,Y,Y,Positive
+168,Renu,F,60,64,N,Y,Y,N,104,62,42,92,6.17,5.63,N,no,Y,N,Y,N,N,Y,Negative
+169,Jobeda,F,42,52,Y,Y,N,Y,139,80,76,136,13.93,21.64,Y,no,Y,Y,Y,N,N,Y,Positive
+170,'Iqbal Hossain',M,36,60,N,Y,Y,N,120,60,49,141,6.9,8.7,N,'6 h',N,N,Y,N,N,Y,Negative
+171,Majeda,F,74,49,N,Y,Y,Y,132,92,50,129,13.24,19.19,N,no,Y,Y,Y,N,N,Y,Positive
+172,'Nilufa Yeasmin',F,35,56,N,Y,N,Y,120,78,60,100,6.9,13.15,N,'6 h',N,N,Y,N,N,Y,Negative
+173,Shetu,M,18,29,Y,N,Y,Y,132,68,44,129,10,14.13,' Y',4h,N,Y,N,Y,N,Y,Negative
+174,Rumana,F,60,59.3,N,Y,N,Y,122,60,74,140,7.8,12.03,N,no,Y,N,N,N,N,N,Positive
+175,Mousume,F,24,35,Y,N,N,N,120,64,56,142,4.5,6.91,Y,'7 h',N,Y,N,N,Y,Y,Negative
+176,'Asad mia',M,20,31,N,N,Y,N,120,68,41,88,13,8.17,N,'5 h',N,N,N,N,N,N,Negative
+177,Moutushe,F,49,70,N,Y,N,N,90,48,70,72,13.05,23.25,N,'2 h',Y,N,N,N,Y,Y,Negative
+178,'Remin Nabi',F,62,79,Y,Y,N,Y,80,80,40,164,9.74,16.39,Y,'5 h',Y,Y,Y,N,N,Y,Positive
+179,'Anwarul ',M,43,50,Y,Y,Y,N,106,84,71,174,10,13,Y,'4 h',Y,Y,N,Y,N,Y,Positive
+180,'Saki Hossain',M,39,45,N,Y,Y,N,104,60,41,121,11.32,15.32,N,'6 h',N,N,Y,N,N,Y,Positive
+181,'Mukta ',F,53,71.7,Y,N,Y,Y,132,58,59,127,4.98,6.68,Y,'4 h',Y,Y,Y,N,N,Y,Positive
+182,'Shampa Begum',F,18,30,Y,N,N,N,88,52,65,93,3.7,6.56,Y,'6 h',N,Y,N,N,Y,Y,Negative
+183,'Anwarul ',M,60,73.1,Y,Y,Y,Y,122,80,57,124,12,13.58,Y,no,Y,Y,Y,N,N,Y,Positive
+184,Begum,F,41,60.5,Y,Y,N,N,100,60,43,122,8,14.5,Y,'9 h',Y,Y,N,N,N,N,Negative
+185,'Golam Mostofa',M,18,34,N,Y,Y,Y,122,62,50,99,12,15.65,N,'4 h',Y,N,N,N,N,N,Negative
+186,'Nur Jahan',F,21,40,Y,Y,N,N,114,72,80,116,15,17.84,N,'8 h',Y,Y,Y,N,N,Y,Negative
+187,'Nusrat Jahan',F,21,38,N,N,N,N,94,54,77,84,17,22.97,N,'7 h',Y,N,N,N,N,N,Negative
+188,'Shohidul Islam',M,57,62,Y,Y,N,Y,126,78,60,114,5.55,6.8,Y,'4 h',N,Y,N,N,N,N,Positive
+189,Parvin,F,19,29,N,Y,N,N,100,54,41,55,8.02,10,N,'4 h',N,N,N,N,Y,Y,Negative
+190,Shamima,F,19,34,Y,N,Y,N,110,74,23,115,0,6.89,Y,'4 h',N,Y,N,N,N,N,Negative
+191,'Rejzanul Haque',M,27,45,Y,N,Y,N,118,60,47,122,0,9.82,Y,'7 h',N,Y,N,N,N,N,Negative
+192,'Rhidoy khan',M,32,65,N,Y,Y,N,88,68,44,123,6.52,10.87,N,'10 h',N,N,Y,N,N,Y,Positive
+193,'Milon ahmed',M,44,53,Y,N,Y,Y,120,90,46,164,0,9.32,Y,'6 h',Y,Y,Y,N,N,Y,Positive
+194,Shahida,F,45,66,Y,y,N,N,140,104,60,108,0,6.44,N,'4 h',Y,Y,Y,N,N,Y,Positive
+195,Rupaly,F,25,62,N,Y,N,N,120,90,50,110,11.16,13.58,N,'12 h',Y,N,N,N,Y,N,Negative
+196,Sohrab,M,50,71,Y,N,Y,Y,130,95,84,156,0,13.26,Y,'4 h',Y,Y,Y,N,N,Y,Positive
+197,'Anil Kumar',M,65,61,Y,Y,Y,Y,130,90,56,130,6.23,8.17,Y,no,Y,Y,Y,N,N,Y,Positive
+198,Anowara,F,55,56,Y,Y,N,Y,122,99,40,152,10,20.55,N,'2 h',Y,Y,N,Y,N,Y,Positive
+199,'Anowar Hossen',M,52,76,N,Y,Y,N,159,99,82,161,0,7.62,N,'4 h',N,N,Y,Y,N,Y,Positive
+200,Nilufa,F,35,81,Y,Y,N,Y,159,100,51,108,0,9.84,Y,'8 h',Y,Y,N,Y,N,Y,Negative
+201,Asma,F,35,60,N,N,N,N,118,68,78,130,10,14.21,Y,'8 h',N,N,N,N,N,N,Negative
+202,'MD shopon',M,40,64,Y,Y,Y,Y,130,100,45,109,0,8.91,Y,'5 h',Y,Y,N,Y,N,Y,Positive
+203,Al-amin,M,32,58,Y,Y,Y,Y,160,94,67,135,18.22,22.97,Y,'9 h',N,Y,Y,N,N,Y,Positive
+204,'Bethe Choudhury',F,35,54,N,N,N,Y,112,82,70,179,12.96,23.36,N,'10 h',Y,N,Y,N,N,Y,Positive
+205,'SK torun',M,45,44,Y,Y,Y,N,88,76,64,161,9,15.95,N,'6 h',Y,Y,Y,N,N,Y,Positive
+206,Jobeda,F,35,51,N,Y,N,Y,92,62,44,100,16,22.35,N,'5 h',Y,N,N,N,N,N,Negative
+207,Rokeya,F,66,45,Y,Y,Y,N,80,76,42,111,6.6,10.11,Y,'2 h',Y,Y,N,N,Y,Y,Positive
+208,Mahmud,M,40,59,N,N,Y,N,110,72,41,104,0,7.88,N,'8 h',Y,N,N,N,Y,Y,Positive
+209,'Anjily Shaha',F,50,48,N,Y,Y,N,112,72,44,192,10.68,15.13,N,'5 h',N,N,Y,N,N,Y,Positive
+210,Fahima,F,45,60,Y,N,N,Y,99,70,52,140,4.1,7.88,Y,'7 h',Y,Y,N,Y,N,Y,Positive
+211,Nitai,M,35,63,N,N,Y,N,116,78,57,110,10.5,18,Y,'10 h',N,N,N,N,N,N,Negative
+212,Aeyesha,F,60,65,N,Y,N,N,106,62,61,117,15.36,23.45,N,'7 h',N,N,N,N,N,N,Positive
+213,'Keramot Ali',M,50,55,N,Y,N,N,110,76,69,123,7.5,8.69,N,'8 h',Y,N,Y,N,N,Y,Positive
+214,'Saleha Begam',F,32,65,Y,N,N,Y,130,76,41,117,6.96,9.97,Y,'10 h',Y,Y,N,N,N,N,Negative
+215,'Jane Alam',M,44,71,N,Y,Y,N,142,66,60,110,0,6.62,Y,'8 h',Y,N,N,N,Y,Y,Positive
+216,'Nasir Uddin',M,50,52,N,N,Y,N,120,60,48,100,6.82,8.03,N,'8 h',Y,N,N,N,N,N,Positive
+217,Renu,F,60,64,N,Y,Y,N,104,62,42,92,6.17,5.63,N,no,Y,N,Y,N,N,Y,Negative
+218,Jobeda,F,42,52,Y,Y,N,Y,139,80,76,136,13.93,21.64,Y,no,Y,Y,Y,N,N,Y,Positive
+219,'Iqbal Hossain',M,36,60,N,N,Y,N,120,60,49,141,6.9,8.7,N,'6 h',N,N,N,N,N,N,Positive
+220,Rokhsana,F,30,62,N,N,N,N,108,60,49,117,0,8.43,N,'8 h',N,N,N,Y,N,Y,Negative
+221,'Horendro Paul',M,45,42,N,N,Y,N,120,70,53,129,6.8,7.9,N,'8 h',Y,N,N,N,N,N,Positive
+222,'Bikash Paul',M,54,60,Y,Y,N,N,107,86,59,125,8.7,9.88,N,'8 h',Y,N,N,N,N,N,Positive
+223,Fatema,F,55,53,Y,Y,N,N,122,86,40,100,5.81,9.78,N,'6 h',Y,N,N,N,Y,Y,Positive
+224,'Babul hosain',M,55,82,N,N,Y,Y,152,110,70,174,0,22.38,Y,'5 h',Y,Y,Y,N,N,Y,Positive
+225,Nashrin,F,40,67,N,Y,N,Y,134,108,72,180,9.69,11.38,N,'6 h',Y,N,Y,N,N,Y,Positive
+226,Shirin,F,47,58,Y,Y,N,Y,120,76,79,173,6.79,12.88,Y,'5 h',Y,Y,Y,N,N,Y,Positive
+227,'MD mannan',M,56,65,Y,Y,N,Y,106,72,70,160,9.95,12,Y,no,Y,Y,Y,N,N,Y,Positive
+228,'Sekh Akter',M,52,82,Y,Y,Y,Y,136,90,81,153,21.3,32.8,Y,no,Y,Y,Y,N,N,Y,Positive
+229,Tashlima,F,40,30,N,Y,N,Y,142,92,85,150,23.5,25.8,Y,'10 h',Y,Y,N,Y,N,Y,Positive
+230,Tahmina,F,25,49,Y,N,N,N,149,100,60,119,8.9,19.4,N,'10 h',N,Y,N,N,N,N,Negative
+231,'Abul Bashar',M,38,65,Y,Y,Y,Y,148,100,59,120,10.61,17.36,Y,'10 h',N,Y,Y,N,N,Y,Positive
+232,'Younus Ali',M,66,70,N,Y,Y,N,159,108,52,100,6.5,9.6,N,no,Y,N,N,N,N,N,Positive
+233,'Nirmol Poddar',M,30,60,N,N,Y,N,80,60,49,94,6.59,7.42,N,'10 h',N,N,N,N,N,N,Negative
+234,'Sulta Islam',M,32,57,N,N,N,N,86,68,58,95,6.9,9.55,N,'10 h',N,N,N,N,N,N,Negative
+235,'Shurborno Bonik',F,24,66,Y,N,Y,Y,126,97,76,158,8.17,14.16,Y,'9 h',N,Y,Y,N,N,Y,Negative
+236,Shahida,F,40,58,N,Y,N,Y,144,99,70,153,9.82,18.84,Y,'8 h',Y,Y,Y,N,N,Y,Positive
+237,Mejbahuddin,M,65,83,Y,Y,Y,Y,152,90,75,173,17.8,25.3,Y,no,Y,Y,Y,Y,N,Y,Positive
+238,Majeda,F,74,49,N,Y,Y,Y,132,92,50,129,13.24,19.19,N,no,Y,Y,Y,N,N,Y,Positive
+239,'Khurshid mia',M,21,43,N,N,Y,N,110,50,41,86,15.76,22.45,N,'4 h',N,N,N,N,N,N,Negative
+240,Jobeda,F,37,50,Y,Y,N,N,112,66,41,128,23.1,27.18,Y,'7 h',Y,Y,N,N,Y,Y,Negative
+241,'Falguni Begam',F,19,35,N,N,N,N,126,60,60,107,17.8,25.47,N,'5 h',N,N,N,N,N,N,Negative
+242,Farjana,F,51,67.3,N,Y,N,N,94,60,62,160,11,15.8,N,no,Y,N,Y,N,N,Y,Positive
+243,' MD Hasan ',M,35,61,Y,N,Y,N,120,78,67,77,21.3,23.49,Y,'4 h',Y,Y,N,N,N,N,Negative
+244,'Samanta Hasan',F,18,30,N,N,N,N,94,32,79,39,9.2,13.27,N,'3 h',N,N,N,N,N,N,Negative
+245,'Abul Hasem',M,45,66.5,Y,Y,Y,Y,144,84,47,77,8.01,13,Y,no,Y,N,Y,N,N,Y,Negative
+246,'Md. Rakib mia',M,40,60,Y,Y,Y,N,112,70,46,135,10,17.13,Y,'5 h',Y,Y,Y,N,N,Y,Positive
+247,Md.Rokib,M,50,75,Y,N,Y,Y,130,74,56,196,5.7,7.9,Y,no,Y,Y,N,Y,N,Y,Positive
+248,Ajharul,M,48,79,N,Y,Y,Y,136,82,38,179,10.8,17.24,N,no,Y,N,Y,N,N,Y,Positive
+249,Suborna,F,60,58.4,Y,Y,N,N,120,76,64,85,4.1,6.9,N,'6 h',Y,Y,N,N,N,N,Negative
+250,Rekha,F,35,44,Y,N,N,Y,92,90,57,125,0,15.95,Y,'10 h',Y,Y,N,N,N,N,Positive
+251,'Hasan Kabir',M,60,60,Y,N,Y,N,137,76,62,131,0,0,N,'8 h',N,Y,N,N,Y,Y,Positive
+252,Laily,F,50,57,Y,Y,N,N,92,78,45,110,0,13.29,N,'4 h',Y,Y,N,N,N,N,Positive
+253,Moonjan,F,52,60,N,N,N,N,110,66,81,147,0,10.1,N,'12 h',N,Y,Y,Y,N,Y,Positive
+254,'Shirin Ahmed',F,50,62,Y,Y,N,N,98,60,80,153,8.02,15.54,N,'8 h',N,Y,Y,N,N,Y,Positive
+255,'Soburun nessa',F,80,70,Y,Y,N,N,116,82,43,120,0,11.89,Y,'5 h',Y,Y,N,N,N,N,Positive
+256,Sabiha,F,46,58,Y,Y,N,N,112,70,50,130,0,18.73,Y,'4 h',Y,Y,N,N,N,N,Positive
+257,'Momin Uddin',M,80,70,N,Y,Y,N,80,56,73,144,0,9.02,N,'2 h',N,Y,Y,N,N,Y,Positive
+258,'Dulal Chandra',M,45,65,N,N,Y,Y,88,72,61,144,6,7.82,N,'12 h',N,N,N,Y,N,Y,Positive
+259,Sajeda,F,36,58,N,Y,N,Y,100,76,40,100,5.39,8.4,N,'11 h',N,N,N,N,N,N,Positive
+260,Iqbal,M,46,60,Y,Y,Y,N,140,72,47,112,4.22,7,Y,'6 h',N,Y,N,N,Y,Y,Positive
+261,'Surjo Begam',F,54,49,N,Y,N,N,120,70,41,115,4.25,6.85,N,'2 h',N,N,N,N,N,N,Positive
+262,Momtaj,F,66,58,Y,Y,N,N,100,66,74,153,0,10.7,Y,'2 h',Y,Y,Y,N,N,Y,Positive
+263,'Amin Uddin',M,45,60,N,N,Y,N,110,60,60,129,0,12.22,N,'2 h',N,N,Y,N,N,Y,Positive
+264,Khushi,F,37,76,N,N,N,Y,120,78,57,142,5.9,13.3,N,'10 h',N,Y,Y,N,N,Y,Positive
+265,'Golam Kabir',M,62,63,N,Y,Y,Y,126,98,62,159,11.6,17.5,Y,'6 h',Y,Y,Y,N,N,Y,Positive
+266,'Sekh Ahmed Barek',M,65,47,Y,Y,Y,N,120,60,40,143,5.9,8.6,N,no,Y,N,N,N,N,N,Positive
+267,'Younus Ali',M,66,70,N,Y,Y,N,140,70,40,110,6.5,7.6,N,no,Y,N,N,N,Y,Y,Positive
+268,'Shurborno Bonik',F,24,65,Y,Y,N,Y,137,100,49,176,14.03,17.42,Y,'10 h',N,Y,N,Y,N,Y,Positive
+269,'Doly Dotto',F,52,63,N,Y,N,Y,159,100,80,170,8.4,10.45,N,'8 h',Y,N,Y,'N ',N,Y,Positive
+270,Nafis,M,35,63,N,N,Y,N,80,64,44,120,6.05,6.84,N,'6 h',N,N,N,N,N,N,Positive
+271,Helena,F,32,56,N,N,N,N,120,88,40,119,5.69,10.4,N,'10 h',N,N,N,N,N,N,Positive
+272,'Bashonty Rani',F,45,50,Y,Y,N,Y,124,98,60,128,10.5,17.4,Y,'8 h',Y,Y,N,N,Y,Y,Positive
+273,'Nirmol Chandro Paul',M,40,50,N,N,Y,N,120,70,62,137,6.36,10.26,N,'5 h',N,N,N,N,N,N,Positive
+274,'Ajit Kumar Paul',M,42,52,Y,Y,Y,Y,127,90,52,126,10.25,13.73,Y,'6 h',N,Y,N,N,Y,Y,Negative
+275,Rehena,F,45,63,Y,Y,N,Y,159,100,58,126,7.6,15.9,N,'8 h',Y,N,Y,N,N,Y,Positive
+276,'Nirmil Dash',M,35,76,N,Y,Y,N,145,104,69,148,0,16,N,'6 h',N,Y,N,Y,N,Y,Positive
+277,momina,F,48,58,Y,Y,N,Y,168,90,57,131,13,14.53,Y,'5 h',Y,Y,N,N,N,N,Positive
+278,'Shirajul islam',M,24,79,Y,N,Y,N,108,76,62,69,5.5,6.7,N,'7 h',N,Y,N,N,N,N,Negative
+279,'Sumon Khan',M,46,73.4,Y,N,Y,N,126,78,45,77,4.9,6.9,N,'4 h',Y,Y,N,N,N,N,Negative
+280,'sumi sultana',F,34,50,N,N,N,N,110,66,81,59,7.7,8.54,N,'6 h',N,Y,N,Y,N,Y,Negative
+281,sufia,F,22,40,Y,N,N,N,98,60,37,90,9,14.38,N,'3 h',N,Y,N,N,N,N,Negative
+282,'majharul Haque',M,29,49,Y,N,Y,N,116,82,43,120,17,25.33,Y,'7 h',Y,Y,N,N,N,N,Negative
+283,'abida begum',F,61,59.6,Y,Y,N,N,112,70,50,130,12,22.71,Y,'5 h',Y,Y,N,N,N,N,Positive
+284,sultana,F,21,45,N,N,N,N,116,66,73,144,20,11.7,N,'7 h',N,Y,Y,N,N,Y,Positive
+285,Parvin,F,33,48,N,N,N,Y,128,72,61,84,3.3,11.51,N,'5 h',N,N,Y,N,N,Y,Negative
+286,'Shiraj Kaji',M,63,84.4,N,Y,Y,Y,84,60,39,84,7.3,10.45,N,no,N,N,N,Y,N,Y,Positive
+287,Abida,F,32,70,Y,Y,N,N,116,72,33,112,24,30,Y,no,N,Y,N,N,Y,Y,Positive
+288,'Khurshid mia',M,21,73,N,Y,Y,N,110,50,41,86,15.76,22.45,N,'4 h',N,N,N,N,N,N,Negative
+289,Sharifunnessa,F,50,53,N,N,N,N,120,70,40,99,3.7,8.15,N,no,Y,N,N,N,Y,Y,Negative
+290,'Emon sk',M,60,52,N,N,N,N,108,60,43,96,6.98,9.5,N,no,Y,N,N,N,N,N,Negative
+291,Firoja,F,76,74,Y,Y,Y,Y,139,100,61,103,0,18.99,Y,no,Y,Y,N,Y,N,Y,Positive
+292,'shagor ',M,50,82,Y,Y,Y,Y,159,108,49,92,10.5,14.69,Y,'2 h',Y,Y,Y,N,N,Y,Negative
+293,Moushumi,F,32,70,N,N,Y,N,86,62,44,90,6.4,9.3,N,'8 h',N,N,N,N,N,N,Negative
+294,'Moshlem Uddin',M,52,71,Y,Y,Y,Y,120,78,52,124,11.6,14.1,Y,no,Y,Y,Y,N,N,Y,Positive
+295,'Jotish Malo',M,82,62,Y,Y,Y,Y,146,120,86,145,30.22,39.28,N,no,Y,Y,Y,Y,N,Y,Positive
+296,'Helena Parvin',F,32,56,N,N,N,N,120,68,80,149,5.69,10.4,N,'8 h',N,N,Y,N,N,Y,Positive
+297,'Akhidul Islam',M,64,74,Y,Y,Y,Y,160,100,72,163,19.2,24.9,N,no,Y,Y,Y,N,N,Y,Positive
+298,'Komol Krishno Shaha',M,45,66,Y,Y,Y,Y,166,122,60,128,10.4,17.9,Y,'8 h',Y,Y,N,Y,N,Y,Positive
+299,Rahima,F,63,67,Y,Y,N,Y,147,98,60,125,8.8,13.1,Y,no,Y,N,Y,N,N,Y,Positive
+300,'Sonjoy Kumar Shaha',M,46,74,Y,Y,Y,Y,120,79,86,150,12.3,17.2,N,'5 h',Y,Y,N,Y,N,Y,Positive
